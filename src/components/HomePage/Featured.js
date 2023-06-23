@@ -30,11 +30,6 @@ function Featured(props) {
           ))}
         </div>
         <div className="row mt-5">
-          <div className="col text-center">
-            <Link to="/products" className="main-link">
-              our products
-            </Link>
-          </div>
         </div>
       </div>
     </section>

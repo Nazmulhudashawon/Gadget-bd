@@ -1,0 +1,16 @@
+.in-form{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(155, 190, 190);
+
+}
+.formfill{
+    padding: 75px 40px;
+    border:1px solid white;
+    border-radius: 20px;
+    box-shadow: rgba(81, 156, 179, 0.904) 0px 5px 15px;
+    background-color: rgb(238, 238, 238);
+
+}

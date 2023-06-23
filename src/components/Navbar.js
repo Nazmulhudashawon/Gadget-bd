@@ -4,14 +4,24 @@ import { connect } from "react-redux";
 import {Link}  from "react-router-dom";
 import { FaBars, FaCartPlus } from "react-icons/fa";
 import { handleSidebar, handleCart } from "../store/actions/products";
+import useAuth from "../Hooks/useAuth";
 
 function Navbar(props) {
+  const { user, logout } = useAuth();
   return (
     <NavWrapper>
       <div className="nav-center">
         <h3>Gadget BD</h3>
         <div className="nav-cart">
-          <Link to="/">login</Link>
+        {user.email ? (
+              <button className=" button" onClick={logout}>
+                logout
+              </button>
+            ) : (
+              <Link as={Link} to="/login">
+                Login|Signup
+              </Link>
+            )}
           <FaCartPlus className="nav-icon" onClick={props.handleCart} />
           <div className="cart-items">{props.cartItems}</div>
         </div>
