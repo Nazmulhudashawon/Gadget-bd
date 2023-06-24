@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import { connect } from "react-redux";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Header/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/HomePage";
 
