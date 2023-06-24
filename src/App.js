@@ -18,6 +18,7 @@ import Login from "./components/Login/Login";
 import Signup from "./components/signup/Signup";
 import Sidecart from "./components/Sidecart";
 import Sidebar from './components/Sidebar';
+import Checkout from "./components/checkout/Checkout";
 
 function App(props) {
   useEffect(() => {
@@ -42,6 +43,7 @@ function App(props) {
         <Route exact path="/products" component={Products} />
         <Route exact path="/products/:id" component={SingleProduct} />
         <Route exact path="/cart" component={Cart} />
+        <Route exact path="/checkout" component={Checkout} />
         <Route component={Default} />
       </Switch>
       </AuthProvider>

@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { clearCart } from "../../store/actions/products";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function CartTotals(props) {
   return (
@@ -13,9 +14,16 @@ function CartTotals(props) {
           >
             clear cart
           </button>
-          <h3>subtotal: ${props.cartSubTotal}</h3>
-          <h3>tax: ${props.cartTax}</h3>
+      
+          
           <h3>total: ${props.cartTotal}</h3>
+          <Link as={Link} to="/checkout">  
+          <button
+            className="btn btn-success text-capitalize mt-4"          
+          >
+          Procced to Check out
+          </button>
+          </Link>
         </div>
       </div>
     </div>
