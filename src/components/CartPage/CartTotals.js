@@ -16,7 +16,7 @@ function CartTotals(props) {
           </button>
       
           
-          <h3>total: ${props.cartTotal}</h3>
+          <h3>total: {props.cartTotal} TK</h3>
           <Link as={Link} to="/checkout">  
           <button
             className="btn btn-success text-capitalize mt-4"          

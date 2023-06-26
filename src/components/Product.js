@@ -24,9 +24,9 @@ function Product({ product, onCart, onSingle }) {
             <FaCartPlus className="icon" onClick={() => onCart(product.id)} />
           </div>
         </div>
-        <div className="card-body d-flex justify-content-between">
-          <p className="mb-0">{product.title}</p>
-          <p className="mb-0 text-main">${product.price}</p>
+        <div className="card-body ">
+          <p className="mb-2">{product.title}</p>
+          <p className="mb-0 text-main">BDT {product.price}</p>
         </div>
       </div>
     </ProductWrapper>
@@ -73,9 +73,7 @@ const ProductWrapper = styled.div`
     opacity: 1;
   }
   .card-body {
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-weight: bold 
   }
 `;
 

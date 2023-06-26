@@ -1,7 +1,5 @@
 import React from 'react';
 import { FaCcMastercard, FaCcVisa } from "react-icons/fa";
-
-
 import '../checkout/Checkout.css'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
@@ -18,13 +16,13 @@ const Checkout = () => {
                             <div class="col-50">
                                 <h3>Billing Address</h3>
                                 <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                                <input type="text" id="fname" name="firstname" placeholder="John M. Doe" />
+                                <input type="text" id="fname" name="firstname"  />
                                 <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                                <input type="text" id="email" name="email" placeholder="john@example.com" />
+                                <input type="text" id="email" name="email"  />
                                 <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" />
+                                <input type="text" id="adr" name="address"  />
                                 <label for="city"><i class="fa fa-institution"></i> City</label>
-                                <input type="text" id="city" name="city" placeholder="New York" />
+                                <input type="text" id="city" name="city"  />
 
                                 <div class="row">
                                     <div class="col-50">
@@ -33,7 +31,7 @@ const Checkout = () => {
                                     </div>
                                     <div class="col-50">
                                         <label for="zip">Zip</label>
-                                        <input type="text" id="zip" name="zip" placeholder="10001" />
+                                        <input type="text" id="zip" name="zip"  />
                                     </div>
                                 </div>
                             </div>
@@ -47,15 +45,15 @@ const Checkout = () => {
                                     <FaCcVisa className='pl-4' />
                                 </div>
                                 <label for="cname">Name on Card</label>
-                                <input type="text" id="cname" name="cardname" placeholder="John More Doe" />
+                                <input type="text" id="cname" name="cardname"  />
                                 <label for="ccnum">Credit card number</label>
-                                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" />
+                                <input type="text" id="ccnum" name="cardnumber" />
                                 <label for="expmonth">Exp Month</label>
-                                <input type="text" id="expmonth" name="expmonth" placeholder="September" />
+                                <input type="text" id="expmonth" name="expmonth"  />
                                 <div class="row">
                                     <div class="col-50">
                                         <label for="expyear">Exp Year</label>
-                                        <input type="text" id="expyear" name="expyear" placeholder="2018" />
+                                        <input type="text" id="expyear" name="expyear" />
                                     </div>
                                 </div>
                             </div>
@@ -67,14 +65,15 @@ const Checkout = () => {
                         </label>
                         <Link as={Link} to="/checkout">
                             <button
-                                className="btn btn-primary text-capitalize mt-4"
+                                className="btn btn-success text-capitalize mt-4"
                             >
-                                Place Order
+                                Place My Order
                             </button>
                         </Link>
                     </form>
                 </div>
             </div>
+            
 
         </div>
 

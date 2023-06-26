@@ -21,7 +21,7 @@ function Sidecart(props) {
         ))}
       </ul>
       <h4 className="text-capitalize text-main">
-        cart total: ${props.cartTotal}
+        cart total: {props.cartTotal} TK
       </h4>
       <div className="text-center my-5">
         <Link to="/cart" className="main-link">

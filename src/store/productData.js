@@ -82,7 +82,7 @@ export const items = [
     id: 6,
 
     title: "fuji X100s photo camera",
-    price: 90,
+    price: 90000,
     company: "fuji",
     description:
       "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
@@ -95,7 +95,7 @@ export const items = [
     id: 7,
 
     title: "canon Eos 30 photo camera",
-    price: 120,
+    price: 59000,
     company: "canon",
     description:
       "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
@@ -108,7 +108,7 @@ export const items = [
     id: 8,
 
     title: "nikon D 3100 photo camera",
-    price: 55,
+    price: 55000,
     company: "nikon",
     description:
       "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
