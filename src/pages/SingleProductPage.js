@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { addToCart, getStorageProduct } from "../store/actions/products";
-import Hero from "../components/Hero";
-import singleProductImg from "../images/singleProductBcg.jpeg";
 
 function SingleProductPage({ product, loading, addToCart, getStorageProduct }) {
   useEffect(() => {
@@ -13,7 +11,6 @@ function SingleProductPage({ product, loading, addToCart, getStorageProduct }) {
 
   return (
     <React.Fragment>
-      <Hero img={singleProductImg} title="single product" />
       {loading && <h1>product is loading...</h1>}
       <section className="py-5">
         <div className="container">

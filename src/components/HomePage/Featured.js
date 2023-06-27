@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import Title from "../Title";
 import Product from "../Product";
 import {
   getProducts,
@@ -18,8 +17,8 @@ function Featured(props) {
   return (
     <section className="py-5">
       <div className="container">
-        <Title title="featured products" center="true" />
-        <div className="row my-5">
+      <h2 className="text-center fw-bolder">Featured Products</h2>
+        <div className="row my-3">
           {props.featured.map(product => (
             <Product
               key={product.id}

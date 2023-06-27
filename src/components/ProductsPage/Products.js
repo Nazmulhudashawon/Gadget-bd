@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import Title from "../Title";
 import Product from "../Product";
 import ProductFilter from "./ProductFilter";
 import {
@@ -16,9 +15,9 @@ function Products(props) {
   }, []);
 
   return (
-    <section className="py-5">
+    <section className="py-2">
       <div className="container">
-        <Title center title="our products" />
+      <h2 className="text-center fw-bolder">Our Products</h2>
         <ProductFilter />
         <div className="row">
           <div className="col-10 mx-auto">
@@ -29,7 +28,7 @@ function Products(props) {
         </div>
       </div>
       <div className="container">
-        <div className="row py-5">
+        <div className="row py-2">
           {props.products.length === 0 && (
             <div className="col text-title text-center">
               sorry, no items matched your search

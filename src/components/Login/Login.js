@@ -69,7 +69,7 @@ const Login = () => {
         <div className="in-form">
 
             <div className=" formfill">
-                <h2>login</h2>
+                <h5 className='text-center'>Customer Login</h5>
                 <form onSubmit={handlelogin}>
 
 
@@ -90,7 +90,7 @@ const Login = () => {
 
                     </div>
                     <div>
-                        <button type="submit" className="btn btn-primary px-4">login </button>
+                        <button type="submit" className="btn btn-info px-4 text-center">LOG IN </button>
                     </div>
 
                 </form>
@@ -100,7 +100,7 @@ const Login = () => {
                 New member ?  <Link to="/register"> Register here</Link>
                 </p>
                 <br />
-                <button onClick={handlegooglelogin} className="text-white btn btn-danger">SIGN IN WITH GOOGLE</button>
+                <button onClick={handlegooglelogin} className="btn btn-outline-info">SIGN IN WITH GOOGLE</button>
 
 
 

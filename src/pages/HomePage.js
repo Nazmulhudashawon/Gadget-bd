@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <React.Fragment>
       <Hero title="awesome gadgets">
-        <Link to="/products" className="main-link mt-3">
+        <Link to="/products"  className="main-link mt-3" >
           Our products
         </Link>
       </Hero>

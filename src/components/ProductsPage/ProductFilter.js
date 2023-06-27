@@ -57,15 +57,15 @@ function ProductFilter(props) {
           <div>
             <label htmlFor="price">
               <p className="mb-2">
-                product price : <span>$ {price}</span>
+                product price : <span>BDT {price}</span>
               </p>
             </label>
             <input
               type="range"
               name="price"
               id="price"
-              min={min}
-              max={max}
+              min='1500'
+              max='7800'
               className="filter-price"
               value={price}
               onChange={handleChange}
@@ -105,6 +105,7 @@ const FilterWrapper = styled.div`
     width: 100%;
     background: transparent;
     border-radius: 0.5rem;
+    padding: 0;
     border: 2px solid var(--darkGrey);
   }
 `;

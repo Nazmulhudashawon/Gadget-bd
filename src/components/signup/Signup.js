@@ -103,7 +103,7 @@ const Signup = () => {
                         {error}
                     </div>
                     <button
-                        type="submit" className="btn btn-primary mb-2">CREATE ACCOUNT</button>
+                        type="submit" className="btn btn-info mb-2">CREATE ACCOUNT</button>
                 </form>
 
                 <p>
