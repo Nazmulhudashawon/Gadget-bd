@@ -82,7 +82,7 @@ const Signup = () => {
         <div className="in-form">
 
             <div className=" formfill ">
-                <h2>Sign up</h2>
+                <h5 class="text-center">Sign up Form</h5>
                 <form onSubmit={handleregister}>
                     <div className="mt-4">
 
@@ -102,12 +102,14 @@ const Signup = () => {
                     <div className="text-danger">
                         {error}
                     </div>
-                    <button
-                        type="submit" className="btn btn-info mb-2">CREATE ACCOUNT</button>
+                   <div class="d-grid gap-2 mb-4">
+                   <button
+                        type="submit" className="btn btn-info">CREATE ACCOUNT</button>
+                   </div>
                 </form>
 
                 <p>
-                    already have an account ? <Link to="/login">login</Link>
+                    Already have an account ? <Link to="/login">login</Link>
                 </p>
                 <br />
 

@@ -89,8 +89,8 @@ const Login = () => {
                     <div>
 
                     </div>
-                    <div>
-                        <button type="submit" className="btn btn-info px-4 text-center">LOG IN </button>
+                    <div class="d-grid gap-2 mb-4">
+                        <button type="submit" className="btn btn-info ">LOG IN </button>
                     </div>
 
                 </form>
@@ -99,7 +99,7 @@ const Login = () => {
                 <p>
                 New member ?  <Link to="/register"> Register here</Link>
                 </p>
-                <br />
+               
                 <button onClick={handlegooglelogin} className="btn btn-outline-info">SIGN IN WITH GOOGLE</button>
 
 

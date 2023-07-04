@@ -6,11 +6,11 @@ import styled from "styled-components";
 function Footer({ socialLinks }) {
  
   return (
-    <FooterWrapper>    
+    <div className="text-light bg-dark">    
      
-      <div className="container py-3 text-center">                       
+      <div className="container py-1 text-center ">                       
             {socialLinks.map(link => (
-              <a className="mx-2" key={link.id} href={link.url}>
+              <a className="mx-2 text-white fs-4 " key={link.id} href={link.url}>
                 {link.icon}
               </a>
               
@@ -20,7 +20,7 @@ function Footer({ socialLinks }) {
               reserved
             </p>
           </div>
-    </FooterWrapper>
+    </div>
   );
 }
 const mapStatesToProps = ({ products }) => {
@@ -28,17 +28,7 @@ const mapStatesToProps = ({ products }) => {
 };
 
 const FooterWrapper = styled.footer`
-  background: var(--darkGrey);
-  color: var(--mainWhite);
-  .icon {
-    font-size: 1.5rem;
-    color: var(--mainWhite);
-    transition: var(--mainTransition);
-  }
-  .icon:hover {
-    color: var(--primaryColor);
-    cursor: pointer;
-  }
+ 
 `;
 
 export default connect(mapStatesToProps, null)(Footer);
