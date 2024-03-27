@@ -1,0 +1,19 @@
+.in-form{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    
+
+}
+.formfill{
+    padding: 75px 40px;
+    border:1px solid white;
+    border-radius: 20px;
+    box-shadow: #5fb7ea 2px 5px 15px;
+    background-color: rgb(238, 238, 238);
+}
+p a{
+    text-decoration: none;
+}
